@@ -1,5 +1,40 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "scroll-behavior" smooth;
+}
+.container {
+  /* background-image: url("https://lncimg.lance.com.br/cdn-cgi/image/width=1300,height=750,quality=75,background=white,fit=pad/uploads/2023/08/Maracana-aspect-ratio-512-320-3.jpeg"); */
+}
+
+.navbar {
+  background-color: transparent;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Certifica-se de que a largura é de 100% */
+}
+
+.nav-item {
+  flex: 1; /* Faz com que cada item ocupe o mesmo espaço */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  height: 100%;
+  width: 100%;
+}
+
+.nav-link{
+  color: #FF0000 !important;
+}
+.nav-link.active {
+  color: #00FF00 !important; 
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+}
+.logo img {
+  max-width: 100%;
 }
