@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <style class="anchorjs"></style>
+    <link href="https://fonts.cdnfonts.com/css/gotham-6" rel="stylesheet" />
     <link
       href="/docs/5.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,6 +18,10 @@
       crossorigin="anonymous"
     />
     <link href="/docs/5.0/assets/css/docs.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style/index.css" />
     <title>Devigili Importadora</title>
   </head>
@@ -74,74 +79,38 @@
 
       <!-- Abrindo barra de apresentação : Menu  -->
       <div class="containerMenuCentral">
-        <img src="images/Design sem nome (3).png" alt="banner_site">
-
+        <img src="" alt="banner_site" />
       </div>
       <!-- Fechando barra de apresentação : Menu  -->
 
       <!-- Abrindo cartões das Infos  -->
       <!-- Talvez transformar em algo para mostrar os lançamentos, deixar só as
       imagens ou por mês. que daí abre uma lista com os códigos -->
-      <h1 style="text-align: center;">Linhas de Produtos</h1>
-      <div class="row row-cols-2 row-cols-md-5 g-5">
-       
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/2.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/3.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/4.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/5.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a short card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/6.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content.
-              </p>
+      <h1 style="text-align: center">Linhas de Produtos</h1>
+      <div class="slide-body">
+        <div class="slide-container">
+          <div class="slide-content">
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img src="images/1.png" alt="" class="card-img" />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="cod">Nome</h2>
+                  <p class="descricao">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis et reiciendis commodi odio doloribus consequatur
+                    impedit delectus voluptatibus consequuntur, eligendi
+                    expedita quasi corporis debitis ea aliquam sequi eius
+                    eveniet maiores.
+                  </p>
+
+                  <button class="button">Veja Mais!</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -153,5 +122,8 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script 
+    src="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.js">
+    </script>
   </body>
 </html>

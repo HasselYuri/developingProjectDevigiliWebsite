@@ -2,38 +2,153 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "scroll-behavior" smooth;
+  font-family: "Gotham", sans-serif;
 }
-/* .container { */
-  /* background-image: url("https://lncimg.lance.com.br/cdn-cgi/image/width=1300,height=750,quality=75,background=white,fit=pad/uploads/2023/08/Maracana-aspect-ratio-512-320-3.jpeg"); */
-/* } */
 
-.navbar {
-  background-color: transparent;
-}
-.navbar-nav {
+
+/* NAV / MENU  */
+  .navbar {
+    background-color: transparent;
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Certifica-se de que a largura é de 100% */
+  }
+
+  .nav-item {
+    flex: 1; /* Faz com que cada item ocupe o mesmo espaço */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    height: 100%;
+    width: 100%;
+  }
+
+  .logo {
+    width: 15rem;
+    height: 5rem;
+  }
+
+  .logo img {
+    max-width: 100%;
+  }
+
+/* Fechando NAV / MENU  */
+
+/* Slide de Cards  */
+
+.slide-body{
+  min-height: 100vh;
   display: flex;
-  justify-content: space-between;
-  width: 100%; /* Certifica-se de que a largura é de 100% */
+  align-items: center;
+  justify-content: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(9,105,94,1) 100%);
 }
 
-.nav-item {
-  flex: 1; /* Faz com que cada item ocupe o mesmo espaço */
-  text-align: center; /* Centraliza o texto horizontalmente */
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 40px 0;
+}
+
+.slide-content {
+  margin: 0 40px;
+}
+
+.card {
+  width: 320px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.image-content, .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 10px 14px;
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
   height: 100%;
   width: 100%;
+  background-color: red;
+  border-radius: 25px 25px 0 25px;
 }
 
-.logo {
-  width: 15rem;
-  height: 5rem;
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: red;
 }
 
-.logo img {
-  max-width: 100%;
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
 }
 
-.containerMenuCentral img{
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 20%;
+  background-color: #fff;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20%;
+  border: 4px solid red;
+
+}
+
+.cod{
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.descricao {
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+}
+
+.button{
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: red;
+  border-radius: 5px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover{
+  background: lightcoral;
+}
+
+.containerMenuCentral img {
   width: 100%;
   height: 100%;
   max-width: 1440px;
@@ -45,12 +160,11 @@
   /* box-shadow: 10px 20px grey; */
   /* border-color: black;
   border: 15px ridge black; */
-  
 }
 
 .containerMenuCentral {
   margin: 20px 0;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,44 +176,7 @@
   max-width: 1440px;
 }
 
-/* .col{
-  background-color: red;
-  height: 30rem;
-  display: grid ;
-}
-
-.card {
-  width: 20rem !important;
-  height: 20rem !important;
-  
-  justify-content: space-between;
-  text-align: center;
-}
-
-.card img {
-  border-radius: 3px;
-}
-
-/* .col .card-body {
-  background-color: lightgray;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 3px;
-} */
-
-.col{
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  object-position: center;
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-}
-
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
