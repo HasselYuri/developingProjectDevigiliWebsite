@@ -1,0 +1,100 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* FONTES */
+@import url("https://fonts.cdnfonts.com/css/gotham-6");
+/* font-family: 'Gotham', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Gotham Black', sans-serif;
+font-family: 'Gotham Light', sans-serif;
+font-family: 'Gotham Thin', sans-serif;
+font-family: 'Gotham XLight', sans-serif;
+font-family: 'Carnero', sans-serif;
+font-family: 'Gotham Book', sans-serif;
+font-family: 'Gotham Ultra', sans-serif; */
+
+.sessao {
+  background-color: #ffffff;
+  height: 10rem;
+}
+
+.img-logo-navbar {
+  height: 300px;
+  width: 150px;
+  
+}
+
+.nav-img-logo-navbar {
+  text-align: center;
+}
+
+.nav-ul-menu-navbar {
+  text-align: center;
+  /* background-color: purple; */
+  width: 100%;
+}
+
+/* LINHAS */
+.nav-item-menu-navbar {
+  display: inline;
+  margin-right: 2rem;
+}
+
+/* Texto Linhas */
+.nav-link {
+  font-size: 20px;
+  font-family: "Gotham", sans-serif;
+  color: black;
+  text-decoration: none;
+  margin-right: 2px;
+}
+
+.nav-link:hover {
+  background-color: #e5e5e5;
+  color: black;
+}
+
+/* Div-sessao-info-principal-colunas */
+
+.sessao-info-principal {
+  background-color: black;
+  background-image: linear-gradient(to bottom, #0e685e, black);
+  height: 600px;
+}
+
+.div-sessao-info-principal {
+  margin: 5px;
+}
+
+.div-sessao-info-principal-colunas1 {
+  width: 500px;
+  height: 500px;
+  
+  background-color: orange;
+  text-align: center;
+  /* margin-top: -80px; */
+}
+
+.div-sessao-info-principal-colunas2 {
+  width: 500px;
+  height: 500px;
+
+  background-color: orange;
+  text-align: center;
+  /* margin-top: -80px; */
+}
+
+.imagens{
+  width: 400px;
+  height: 500px;
+}
+
+.infos{
+  color: #ffffff;
+  text-decoration: none;
+  pointer-events: none;
+}
